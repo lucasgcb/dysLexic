@@ -1,0 +1,2 @@
+Read a, b,c;
+Print a ^ b, a v b, a -> c;

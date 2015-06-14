@@ -1,0 +1,41 @@
+﻿//*L Sinta-se livre para modificar ou contestar qualquer merda que encontra-se aqui. 
+	 Ao encontrar problemas na implementação, por favor atualize a situação em "A FAZER"!
+	 Meus comentários começam com "L", sugiro que faça seus comentários começando com "G" para a gente não se perder em um mar de esquizofrenia L*//
+
+
+A FAZER:
+
+
+
+- Iniciar implementação dos Analisadores Léxicos(?) [ ] 
+
+
+
+-> Leem a fita na struct e retornam Strings com o nome de cada Token. //L não sei se string é o jeito mais otimizado para fazer isso.
+//L Não estou conseguindo carregar o Lexico.h onde essas funções vão estar no programa. Pode testar?
+
+	AN_Lex() -> Analisador Lexico geral [ ]
+//L Tá lendo tokenVar e tokenRead no momento. Pode tentar por as funções em um header?
+
+	AN_Exp() -> Analisador de Expressões [ ]
+
+	AN_ExpParenteses() -> Chamado toda vez que é encontrado '('. Analisador de função recursiva identico ao AN_EXP exceto que precisa receber ')' para retornar verdadeiro. [ ]
+ 
+	AN_Read() -> Analisador para casos de Read [ ]
+
+	AN_Atrib() -> Analisador para casos de Atribuição [ ]
+	
+
+- Iniciar implementaçao do Sintático [ ]
+-> Primeiramente é uma Máquina de Estados (apesar de ser GLC) que muda em função da gramática que fizemos, chama os Analisadores Léxicos para ler a fita e ver se o token retornado (ou não) é valido para o estado.  
+ 
+	Sintatico [ ]
+
+OPCIONAL:
+
+//L Utilitários diversos que vou procurar fazer.
+
+- Implementar Funções de auxílio (?), [ ] 
+	
+	ehvariavel("X") -> Identifica se X é uma string que compoem variável [ ] 
+

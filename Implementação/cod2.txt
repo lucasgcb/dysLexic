@@ -1,0 +1,3 @@
+Read a,b,c; d =:= a ^ (b <-> c);
+if (d) { Print d ^ a; }
+else { Print d ^ c; } 
